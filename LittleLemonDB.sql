@@ -80,6 +80,20 @@ VALUES (1, 'Vanessa McCarthy', '757536378', '23 Road, H close, House 3, Festac T
 (4, 'Anna Iversen', '757536375', '245, stillwater, Alberta'),
 (5, 'Diana Pinto', '757536374', 'telling avenue, toronto');
 
+
+INSERT INTO LittleLemonDB.Staff (StaffID, StaffName, Role, ContactNumber, Salary) VALUES 
+(1,'Seamus Hogan', 'Recruitment', '351478025',50000), 
+(2,'Thomas Eriksson', 'Legal', '351475058',75000), 
+(3,'Simon Tolo', 'Marketing', '351930582',40000), 
+(4,'Francesca Soffia', 'Finance', '351258569',45000), 
+(5,'Emily Sierra', 'Customer Service', '351083098',35000), 
+(6,'Maria Carter', 'Human Resources', '351022508',55000),
+(7,'Rick Griffin', 'Marketing', '351478458',50000);
+
+SELECT * FROM LittleLemonDB.Staff;
+
+
+
 select * from LittleLemonDB.Customers;
 
 -- Creating a stored procedure to check booking
@@ -201,6 +215,8 @@ END//
 DELIMITER ;
 
 CALL CancelBooking(6);
+
+show databases;
 
 
 
